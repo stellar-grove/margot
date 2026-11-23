@@ -1,0 +1,34 @@
+{
+ "site": "https://margot.stellargrove.com",
+ "updated": "2026-11-23",
+ "sections": [
+  {
+   "key": "newsletter",
+   "label": "Margot Weekly",
+   "blurb": "The weekly recap: indices, sectors and the watchlist, written from the week's closing prices.",
+   "kind": "issue",
+   "layout": "list",
+   "accent": "#062F4F"
+  },
+  {
+   "key": "stocks",
+   "label": "Stock analyses",
+   "blurb": "Single-company reports: growth, profitability, valuation, a DCF and the peer set.",
+   "kind": "analysis",
+   "layout": "list",
+   "accent": "#0D7A3C"
+  }
+ ],
+ "pages": [
+  {
+   "section": "stocks",
+   "title": "Palantir Technologies Inc. (PLTR)",
+   "summary": "At $153.19, PLTR trades at 10.4x the $14.71 per share our base-case DCF supports; revenue grew 70% over the past year with a 36% net margin.",
+   "date": "2026-11-23",
+   "url": "/stocks/pltr/",
+   "simulated": false,
+   "group": "",
+   "kind": "analysis"
+  }
+ ]
+}
