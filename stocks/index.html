@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock analyses · Margot Isvestments</title>
+<meta name="description" content="Single-company stock analyses from Margot Isvestments.">
+<link rel="canonical" href="https://margot.stellargrove.com/stocks/">
+<link rel="alternate" type="application/atom+xml" title="Margot Weekly" href="https://margot.stellargrove.com/newsletter/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Margot Isvestments">
+<meta property="og:title" content="Stock analyses">
+<meta property="og:description" content="Single-company stock analyses from Margot Isvestments.">
+<meta property="og:url" content="https://margot.stellargrove.com/stocks/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Slab:wght@300;400&display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#0D1C24;font-family:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif}
+.sgr-top{background:#062F4F;color:#fff}
+.sgr-top .in{max-width:1040px;margin:0 auto;padding:.85rem 1.25rem;display:flex;gap:.4rem 1rem;align-items:baseline;
+  justify-content:space-between;flex-wrap:wrap}
+.sgr-brand{font-family:'Roboto Slab',Georgia,serif;font-weight:300;font-size:1.25rem;color:#fff;text-decoration:none}
+.sgr-brand span{color:#F2D15C}
+.sgr-nav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem}
+.sgr-nav a{color:#D5DEE3;text-decoration:none;font-size:.9rem}
+.sgr-nav a:hover,.sgr-brand:hover{text-decoration:underline}
+.sgr-main{padding:2rem 1.25rem 3rem}
+.sgr-hero{max-width:1040px;margin:0 auto 1.5rem}
+.sgr-hero h1{font-family:'Roboto Slab',Georgia,serif;font-weight:300;color:#062F4F;font-size:2.1rem;margin:0 0 .4rem}
+.sgr-hero p{color:#4A5E6D;margin:0;max-width:720px;line-height:1.6}
+.sgr-hero a{color:#0D7A3C}
+.sgr-foot{border-top:1px solid #D5DEE3;color:#4A5E6D;font-size:.85rem}
+.sgr-foot .in{max-width:1040px;margin:0 auto;padding:1.25rem}
+.sgr-foot a{color:#0D7A3C}
+</style>
+</head>
+<body>
+<header class="sgr-top"><div class="in">
+<a class="sgr-brand" href="/">Margot <span>·</span> Isvestments</a>
+<nav class="sgr-nav"><a href="/">Home</a><a href="/newsletter/">Newsletter</a><a href="/stocks/">Stocks</a><a href="/about/">Methodology</a><a href="/newsletter/feed.xml">RSS</a></nav>
+</div></header>
+<main class="sgr-main">
+<style>
+.mg-home{max-width:1040px;margin:0 auto;line-height:1.6}
+.mg-home h2{font-family:'Roboto Slab',Georgia,serif;font-weight:300;color:#062F4F;font-size:1.45rem;margin:0 0 .9rem}
+.mg-hero{position:relative;overflow:hidden;background:#062F4F;color:#fff;border-radius:10px;padding:2.2rem 1.8rem 2rem;
+  margin:0 0 2rem}
+.mg-hero::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:#F2D15C}
+.mg-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle,rgba(242,209,92,.16),rgba(242,209,92,0) 70%)}
+.mg-hero>*{position:relative}
+.mg-kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#9FB6C6;margin:0 0 .6rem}
+.mg-hero h1{font-family:'Roboto Slab',Georgia,serif;font-weight:300;font-size:2.4rem;line-height:1.2;margin:0 0 .6rem}
+.mg-hero p.mg-lede{color:#D5DEE3;max-width:640px;margin:0;font-size:1.02rem}
+.mg-sec{margin:0 0 2.4rem}
+.mg-sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.mg-sec-h a{color:#0D7A3C;font-weight:600;font-size:.9rem;text-decoration:none}
+.mg-sec-h a:hover{text-decoration:underline}
+.mg-tiles{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem}
+.mg-tile{background:#fff;border:1px solid #D5DEE3;border-left:4px solid #0D7A3C;border-radius:8px;padding:.9rem 1rem}
+.mg-tile:nth-child(3n+2){border-left-color:#C8960C}.mg-tile:nth-child(3n){border-left-color:#062F4F}
+.mg-tile b{display:block;font-family:'Roboto Slab',Georgia,serif;font-weight:400;font-size:1.6rem;color:#062F4F;
+  font-variant-numeric:tabular-nums}
+.mg-tile span{font-size:.82rem;color:#4A5E6D}
+.mg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem}
+.mg-card{position:relative;display:flex;flex-direction:column;gap:.4rem;border:1px solid #D5DEE3;border-radius:10px;
+  padding:1.3rem 1.3rem 1.1rem;background:#fff;color:inherit;text-decoration:none;min-height:180px;
+  transition:transform .2s,box-shadow .2s,border-color .2s}
+a.mg-card:hover,a.mg-card:focus-visible{transform:translateY(-3px);box-shadow:0 10px 24px rgba(6,47,79,.12);
+  border-color:#9FB6C6;outline:0}
+.mg-card::before{content:"";position:absolute;left:1.3rem;top:0;width:48px;height:3px;background:#C8960C;border-radius:0 0 3px 3px}
+.mg-card h3{font-family:'Roboto Slab',Georgia,serif;font-weight:400;color:#062F4F;font-size:1.25rem;margin:.2rem 0 0}
+.mg-card p{margin:0;color:#4A5E6D;font-size:.9rem}
+.mg-card .mg-meta{margin-top:auto;padding-top:.6rem;font-size:.8rem;font-weight:600;color:#0D7A3C}
+.mg-card .mg-go{transition:transform .2s;display:inline-block}
+a.mg-card:hover .mg-go{transform:translateX(4px)}
+.mg-card.mg-soon{background:#F6F8F8;border-style:dashed}
+.mg-card.mg-soon::before{background:#9FB6C6}
+.mg-card.mg-soon .mg-meta{color:#7F8F9B}
+.mg-list{list-style:none;padding:0;margin:0;border-top:1px solid #D5DEE3}
+.mg-list li{border-bottom:1px solid #D5DEE3}
+.mg-list a{display:flex;gap:1rem;align-items:baseline;padding:.85rem .25rem;text-decoration:none;color:inherit}
+.mg-list a:hover{background:#F6F8F8}
+.mg-list .mg-t{flex:none;width:4.2rem;font-weight:600;color:#062F4F;font-variant-numeric:tabular-nums}
+.mg-list .mg-s{flex:1;min-width:0}
+.mg-list .mg-s strong{display:block;color:#062F4F;font-weight:600}
+.mg-list .mg-s span{display:block;font-size:.88rem;color:#4A5E6D}
+.mg-list .mg-d{flex:none;font-size:.78rem;color:#4A5E6D}
+.mg-prose>*{max-width:760px}
+.mg-prose h2{margin-top:2rem}
+.mg-prose li{margin:.35rem 0}
+.mg-prose a{color:#0D7A3C}
+@media (max-width:640px){.mg-hero h1{font-size:1.9rem}.mg-tile{padding:.75rem .8rem}.mg-tile b{font-size:1.35rem}.mg-list .mg-d{display:none}.mg-list .mg-t{width:3.4rem}}
+@media (prefers-reduced-motion:reduce){.mg-card,.mg-card .mg-go{transition:none}}
+</style><div class="sgr-hero"><h1>Stock analyses</h1><p>Single-company reports built from the company's filings and market data: growth, profitability, valuation multiples, a discounted cash flow model and the peer set. <a href="/about/">How they are built</a>.</p></div><div class="mg-home"><ul class="mg-list"><li><a href="/stocks/pltr/"><span class="mg-t">PLTR</span><span class="mg-s"><strong>Palantir Technologies Inc. (PLTR)</strong><span>At $159.36, PLTR trades at 3.9x the $41.10 per share our base-case DCF supports.</span></span><span class="mg-d">Updated 2026-11-23</span></a></li></ul></div>
+</main>
+<footer class="sgr-foot"><div class="in">For information only, not investment advice. Margot Isvestments may hold positions in securities it writes about.<br>© 2026 Margot Isvestments,
+a <a href="https://www.stellargrove.com">Stellar Grove</a> company</div></footer>
+</body>
+</html>
