@@ -21,9 +21,19 @@
  ],
  "pages": [
   {
+   "section": "newsletter",
+   "title": "Margot Weekly — November 23, 2026",
+   "summary": "The S&P 500 fell 2.4% this week and is +6.7% for the year; every sector fell, with consumer discretionary holding up best (-1.0%) and energy falling most (-6.0%).",
+   "date": "2026-11-23",
+   "url": "/newsletter/2026-11-23/",
+   "simulated": false,
+   "group": "",
+   "kind": "issue"
+  },
+  {
    "section": "stocks",
    "title": "Palantir Technologies Inc. (PLTR)",
-   "summary": "At $153.19, PLTR trades at 10.4x the $14.71 per share our base-case DCF supports; revenue grew 70% over the past year with a 36% net margin.",
+   "summary": "At $159.36, PLTR trades at 3.9x the $41.10 per share our base-case DCF supports.",
    "date": "2026-11-23",
    "url": "/stocks/pltr/",
    "simulated": false,
