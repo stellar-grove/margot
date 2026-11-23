@@ -1,0 +1,304 @@
+<style>
+.mg-embed{all:initial;display:block;font-family:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color:#0D1C24;line-height:1.6}
+.mg-embed *{box-sizing:border-box}
+.mg-embed a{border:0;box-shadow:none;background-image:none}
+.mg-embed h1,.mg-embed h2,.mg-embed h3{letter-spacing:normal;text-transform:none;line-height:1.25}
+.mg-embed ul,.mg-embed li{list-style:none}
+.mg-embed .sgr-fallback ul,.mg-embed .sgr-fallback li{list-style:disc}
+.mg-embed li::before,.mg-embed li::after{content:none}
+.mg-embed .mg-hero h1{color:#fff}
+.mg-embed h2,.mg-embed h3,.mg-embed .sgr-name{color:#062F4F}
+</style>
+<div class="mg-embed">
+<style>
+.mg-home{max-width:1040px;margin:0 auto;line-height:1.6}
+.mg-home h2{font-family:'Roboto Slab',Georgia,serif;font-weight:300;color:#062F4F;font-size:1.45rem;margin:0 0 .9rem}
+.mg-hero{position:relative;overflow:hidden;background:#062F4F;color:#fff;border-radius:10px;padding:2.2rem 1.8rem 2rem;
+  margin:0 0 2rem}
+.mg-hero::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:#F2D15C}
+.mg-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle,rgba(242,209,92,.16),rgba(242,209,92,0) 70%)}
+.mg-hero>*{position:relative}
+.mg-kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#9FB6C6;margin:0 0 .6rem}
+.mg-hero h1{font-family:'Roboto Slab',Georgia,serif;font-weight:300;font-size:2.4rem;line-height:1.2;margin:0 0 .6rem}
+.mg-hero p.mg-lede{color:#D5DEE3;max-width:500px;margin:0;font-size:1.02rem}
+.mg-hero{min-height:250px}
+.mg-hero>.mg-spark{position:absolute;right:0;bottom:0;width:54%;height:100%;pointer-events:none;
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 45%);mask-image:linear-gradient(to right,transparent,#000 45%)}
+.mg-spark .mg-grid-l{stroke:rgba(159,182,198,.14);stroke-width:1}
+.mg-spark .mg-ln{fill:none;stroke:#F2D15C;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:1;stroke-dashoffset:1;animation:mg-draw 3.2s cubic-bezier(.35,.55,.2,1) .35s forwards;
+  filter:drop-shadow(0 0 6px rgba(242,209,92,.45))}
+.mg-spark .mg-area{opacity:0;transform:translateY(14px);animation:mg-rise 1.6s ease-out 1.6s forwards}
+.mg-spark .mg-dot,.mg-spark .mg-ring{opacity:0;animation:mg-pop .4s ease-out 3.45s forwards}
+.mg-spark .mg-ring{transform-box:fill-box;transform-origin:center;
+  animation:mg-pop .4s ease-out 3.45s forwards,mg-pulse 2.2s ease-out 3.9s infinite}
+@keyframes mg-draw{to{stroke-dashoffset:0}}
+@keyframes mg-rise{to{opacity:1;transform:none}}
+@keyframes mg-pop{to{opacity:1}}
+@keyframes mg-pulse{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.2);opacity:0}}
+@media (max-width:640px){.mg-hero>.mg-spark{width:100%;opacity:.25}}
+@media (prefers-reduced-motion:reduce){.mg-spark .mg-ln{animation:none;stroke-dashoffset:0}
+  .mg-spark .mg-area,.mg-spark .mg-dot{animation:none;opacity:1;transform:none}.mg-spark .mg-ring{display:none}}
+.mg-sec{margin:0 0 2.4rem}
+.mg-sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.mg-sec-h a{color:#0D7A3C;font-weight:600;font-size:.9rem;text-decoration:none}
+.mg-sec-h a:hover{text-decoration:underline}
+.mg-tiles{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem}
+.mg-tile{background:#fff;border:1px solid #D5DEE3;border-left:4px solid #0D7A3C;border-radius:8px;padding:.9rem 1rem}
+.mg-tile:nth-child(3n+2){border-left-color:#C8960C}.mg-tile:nth-child(3n){border-left-color:#062F4F}
+.mg-tile b{display:block;font-family:'Roboto Slab',Georgia,serif;font-weight:400;font-size:1.6rem;color:#062F4F;
+  font-variant-numeric:tabular-nums}
+.mg-tile span{font-size:.82rem;color:#4A5E6D}
+.mg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem}
+.mg-card{position:relative;display:flex;flex-direction:column;gap:.4rem;border:1px solid #D5DEE3;border-radius:10px;
+  padding:1.3rem 1.3rem 1.1rem;background:#fff;color:inherit;text-decoration:none;min-height:180px;
+  transition:transform .2s,box-shadow .2s,border-color .2s}
+a.mg-card:hover,a.mg-card:focus-visible{transform:translateY(-3px);box-shadow:0 10px 24px rgba(6,47,79,.12);
+  border-color:#9FB6C6;outline:0}
+.mg-card::before{content:"";position:absolute;left:1.3rem;top:0;width:48px;height:3px;background:#C8960C;border-radius:0 0 3px 3px}
+.mg-card h3{font-family:'Roboto Slab',Georgia,serif;font-weight:400;color:#062F4F;font-size:1.25rem;margin:.2rem 0 0}
+.mg-card p{margin:0;color:#4A5E6D;font-size:.9rem}
+.mg-card .mg-meta{margin-top:auto;padding-top:.6rem;font-size:.8rem;font-weight:600;color:#0D7A3C}
+.mg-card .mg-go{transition:transform .2s;display:inline-block}
+a.mg-card:hover .mg-go{transform:translateX(4px)}
+.mg-card.mg-soon{background:#F6F8F8;border-style:dashed}
+.mg-card.mg-soon::before{background:#9FB6C6}
+.mg-card.mg-soon .mg-meta{color:#7F8F9B}
+.mg-list{list-style:none;padding:0;margin:0;border-top:1px solid #D5DEE3}
+.mg-list li{border-bottom:1px solid #D5DEE3}
+.mg-list a{display:flex;gap:1rem;align-items:baseline;padding:.85rem .25rem;text-decoration:none;color:inherit}
+.mg-list a:hover{background:#F6F8F8}
+.mg-list .mg-t{flex:none;width:4.2rem;font-weight:600;color:#062F4F;font-variant-numeric:tabular-nums}
+.mg-list .mg-s{flex:1;min-width:0}
+.mg-list .mg-s strong{display:block;color:#062F4F;font-weight:600}
+.mg-list .mg-s span{display:block;font-size:.88rem;color:#4A5E6D}
+.mg-list .mg-d{flex:none;font-size:.78rem;color:#4A5E6D}
+.mg-prose>*{max-width:760px}
+.mg-prose h2{margin-top:2rem}
+.mg-prose li{margin:.35rem 0}
+.mg-prose a{color:#0D7A3C}
+@media (max-width:640px){.mg-hero h1{font-size:1.9rem}.mg-tile{padding:.75rem .8rem}.mg-tile b{font-size:1.35rem}.mg-list .mg-d{display:none}.mg-list .mg-t{width:3.4rem}}
+@media (prefers-reduced-motion:reduce){.mg-card,.mg-card .mg-go{transition:none}}
+</style>
+<div class="mg-home">
+<header class="mg-hero"><svg class="mg-spark" viewBox="0 0 600 250" preserveAspectRatio="xMaxYMax slice" aria-hidden="true" focusable="false"><defs><linearGradient id="mg-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#43C27A" stop-opacity=".38"/><stop offset="1" stop-color="#43C27A" stop-opacity="0"/></linearGradient></defs><line class="mg-grid-l" x1="0" x2="600" y1="60" y2="60"/><line class="mg-grid-l" x1="0" x2="600" y1="120" y2="120"/><line class="mg-grid-l" x1="0" x2="600" y1="180" y2="180"/><path class="mg-area" d="M0.0,228.0 L10.5,220.0 L21.0,205.5 L31.5,206.8 L42.0,216.6 L52.5,213.2 L63.1,204.2 L73.6,188.6 L84.1,197.2 L94.6,206.6 L105.1,195.2 L115.6,186.2 L126.1,166.1 L136.6,151.8 L147.1,148.8 L157.6,147.6 L168.1,116.7 L178.7,115.6 L189.2,119.8 L199.7,127.6 L210.2,122.5 L220.7,116.9 L231.2,116.4 L241.7,113.0 L252.2,122.4 L262.7,127.4 L273.2,128.2 L283.7,138.2 L294.3,169.1 L304.8,174.0 L315.3,184.7 L325.8,182.4 L336.3,193.7 L346.8,189.6 L357.3,193.7 L367.8,187.4 L378.3,148.9 L388.8,145.3 L399.3,132.4 L409.9,142.2 L420.4,141.1 L430.9,130.1 L441.4,127.0 L451.9,119.1 L462.4,113.9 L472.9,120.3 L483.4,110.4 L493.9,114.8 L504.4,91.2 L514.9,92.4 L525.5,81.2 L536.0,77.1 L546.5,63.1 L557.0,65.3 L567.5,50.8 L578.0,48.0 L578.0,250 L0,250 Z" fill="url(#mg-fill)"/><path class="mg-ln" d="M0.0,228.0 L10.5,220.0 L21.0,205.5 L31.5,206.8 L42.0,216.6 L52.5,213.2 L63.1,204.2 L73.6,188.6 L84.1,197.2 L94.6,206.6 L105.1,195.2 L115.6,186.2 L126.1,166.1 L136.6,151.8 L147.1,148.8 L157.6,147.6 L168.1,116.7 L178.7,115.6 L189.2,119.8 L199.7,127.6 L210.2,122.5 L220.7,116.9 L231.2,116.4 L241.7,113.0 L252.2,122.4 L262.7,127.4 L273.2,128.2 L283.7,138.2 L294.3,169.1 L304.8,174.0 L315.3,184.7 L325.8,182.4 L336.3,193.7 L346.8,189.6 L357.3,193.7 L367.8,187.4 L378.3,148.9 L388.8,145.3 L399.3,132.4 L409.9,142.2 L420.4,141.1 L430.9,130.1 L441.4,127.0 L451.9,119.1 L462.4,113.9 L472.9,120.3 L483.4,110.4 L493.9,114.8 L504.4,91.2 L514.9,92.4 L525.5,81.2 L536.0,77.1 L546.5,63.1 L557.0,65.3 L567.5,50.8 L578.0,48.0" pathLength="1"/><circle class="mg-ring" cx="578.0" cy="46.0" r="5" fill="none" stroke="#F2D15C" stroke-width="2"/><circle class="mg-dot" cx="578.0" cy="46.0" r="4.5" fill="#F2D15C"/></svg><p class="mg-kicker">Margot Isvestments · A Stellar Grove company</p><h1>Markets, read from the numbers.</h1><p class="mg-lede">A weekly market newsletter, single-company analyses and, soon, mock portfolios. Every figure comes from the data and every sentence is written from the figures.</p></header>
+<section class="mg-sec"><div class="mg-sec-h"><h2>Markets, week ending 2026-11-23</h2><a href="https://margot.stellargrove.com/newsletter/2026-11-23/">Read the issue →</a></div><ul class="mg-tiles"><li class="mg-tile"><b>-2.4%</b><span>S&amp;P 500 this week</span></li><li class="mg-tile"><b>-1.6%</b><span>Nasdaq 100 this week</span></li><li class="mg-tile"><b>4.92%</b><span>10-year Treasury yield (-20 bp)</span></li><li class="mg-tile"><b>26.6</b><span>VIX (+3.7 on the week)</span></li></ul></section>
+<section class="mg-sec"><h2>Explore</h2><div class="mg-grid"><a class="mg-card" href="https://margot.stellargrove.com/newsletter/"><h3>Margot Weekly</h3><p>The weekly recap: indices, sectors, rates and the watchlist, written from the week&#x27;s closing prices.</p><span class="mg-meta">1 issue · latest 2026-11-23 <span class="mg-go">→</span></span></a><a class="mg-card" href="https://margot.stellargrove.com/stocks/"><h3>Stock analyses</h3><p>Single-company reports: growth, profitability, valuation multiples, a DCF and the peer set.</p><span class="mg-meta">1 company · latest PLTR <span class="mg-go">→</span></span></a><div class="mg-card mg-soon" aria-disabled="true"><h3>Mock portfolios</h3><p>Hypothetical portfolios tracked against the S&amp;P 500, with every trade and its reasoning on the record.</p><span class="mg-meta">Coming soon</span></div><div class="mg-card mg-soon" aria-disabled="true"><h3>Market dashboard</h3><p>Indices, sectors, rates and volatility at a glance, with longer history than the weekly issue.</p><span class="mg-meta">Coming soon</span></div><a class="mg-card" href="https://margot.stellargrove.com/about/"><h3>Methodology &amp; disclosures</h3><p>Where the data comes from, how valuations and peer sets are built, and what these pages are not.</p><span class="mg-meta">Data sources, models, disclosures <span class="mg-go">→</span></span></a></div></section>
+<section class="mg-sec"><div class="mg-sec-h"><h2>Latest analyses</h2><a href="https://margot.stellargrove.com/stocks/">All stock analyses →</a></div><ul class="mg-list"><li><a href="https://margot.stellargrove.com/stocks/pltr/"><span class="mg-t">PLTR</span><span class="mg-s"><strong>Palantir Technologies Inc. (PLTR)</strong><span>At $159.36, PLTR trades at 3.9x the $41.10 per share our base-case DCF supports.</span></span><span class="mg-d">2026-11-23</span></a></li></ul></section>
+<section class="mg-sec"><h2>Search everything</h2><style>
+.sgr-idx{max-width:1040px;margin:0 auto;font-family:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color:#0D1C24;--sgr-ease:cubic-bezier(.2,.7,.2,1)}
+.sgr-idx *{box-sizing:border-box}
+.sgr-tools{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin:0 0 1.25rem}
+.sgr-search{flex:1 1 280px;display:flex;align-items:center;gap:.6rem;border:1px solid #D5DEE3;border-radius:999px;
+  padding:.55rem 1rem;background:#fff;transition:border-color .2s,box-shadow .2s}
+.sgr-search:focus-within{border-color:#0D7A3C;box-shadow:0 0 0 3px rgba(13,122,60,.15)}
+.sgr-search svg{flex:none;color:#4A5E6D}
+.sgr-search input{border:0;outline:0;font:inherit;font-size:.95rem;width:100%;background:transparent;color:inherit;
+  padding:0;margin:0}
+.sgr-btn{font:500 .85rem 'Montserrat',sans-serif;border:1px solid #D5DEE3;background:#fff;color:#062F4F;
+  border-radius:999px;padding:.55rem 1rem;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.sgr-btn:hover{background:#062F4F;border-color:#062F4F;color:#fff}
+.sgr-chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.5rem}
+.sgr-chip{font:500 .8rem 'Montserrat',sans-serif;border:0;border-radius:999px;padding:.35rem .8rem;cursor:pointer;
+  background:#EEF2F1;color:#062F4F;display:inline-flex;gap:.45rem;align-items:center;transition:transform .15s}
+.sgr-chip:hover{transform:translateY(-1px)}
+.sgr-chip i{width:.55rem;height:.55rem;border-radius:50%;background:var(--a);display:inline-block}
+.sgr-chip b{font-weight:600;color:#4A5E6D}
+.sgr-empty{color:#4A5E6D;padding:1rem 0}
+.sgr-sec{border:1px solid #D5DEE3;border-radius:10px;margin:0 0 .85rem;background:#fff;overflow:hidden;
+  border-left:4px solid var(--a);transition:box-shadow .25s}
+.sgr-sec.open{box-shadow:0 6px 24px rgba(6,47,79,.08)}
+.sgr-head{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:1rem;cursor:pointer;
+  padding:1.05rem 1.25rem;transition:background .2s}
+.sgr-head:hover{background:#F6F8F8}
+.sgr-head:focus-visible{outline:2px solid #0D7A3C;outline-offset:-2px}
+.sgr-head-t{flex:1;min-width:0}
+.sgr-name{display:block;font-family:'Roboto Slab',Georgia,serif;font-weight:400;font-size:1.3rem;color:#062F4F;
+  line-height:1.3}
+.sgr-blurb{display:block;font-size:.88rem;color:#4A5E6D;margin-top:.15rem;line-height:1.5}
+.sgr-count{flex:none;font-size:.8rem;font-weight:600;color:#062F4F;background:#EEF2F1;border-radius:999px;
+  padding:.2rem .65rem;white-space:nowrap}
+.sgr-chev{flex:none;width:2rem;height:2rem;border-radius:50%;display:grid;place-items:center;background:#EEF2F1;
+  transition:transform .35s var(--sgr-ease),background .2s}
+.sgr-chev::before{content:"";width:.5rem;height:.5rem;border-right:2px solid #062F4F;border-bottom:2px solid #062F4F;
+  transform:translateY(-2px) rotate(45deg)}
+.sgr-sec.open .sgr-chev{transform:rotate(180deg);background:#F2D15C}
+.sgr-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s var(--sgr-ease)}
+.sgr-sec.open .sgr-body{grid-template-rows:1fr}
+.sgr-inner{overflow:hidden;min-height:0}
+.sgr-list{padding:0 .75rem 1rem}
+.sgr-hub{display:inline-block;margin:0 1.25rem .25rem;font-size:.85rem;font-weight:500;color:#0D7A3C}
+.sgr-group{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#4A5E6D;
+  margin:1rem .5rem .35rem}
+.sgr-row{display:flex;align-items:center;gap:1rem;padding:.7rem .75rem;border-radius:8px;text-decoration:none;
+  color:inherit;position:relative;opacity:0;transform:translateY(6px);
+  transition:background .2s,opacity .35s var(--sgr-ease),transform .35s var(--sgr-ease)}
+.sgr-sec.open .sgr-row{opacity:1;transform:none;transition-delay:calc(var(--i,0) * 25ms)}
+.sgr-row::before{content:"";position:absolute;left:0;top:.6rem;bottom:.6rem;width:3px;border-radius:3px;
+  background:var(--a);transform:scaleY(0);transition:transform .2s}
+.sgr-row:hover,.sgr-row:focus-visible{background:#F6F8F8;outline:0}
+.sgr-row:hover::before,.sgr-row:focus-visible::before{transform:scaleY(1)}
+.sgr-row-main{flex:1;min-width:0}
+.sgr-row-t{display:block;font-weight:600;font-size:.98rem;color:#062F4F;line-height:1.4}
+.sgr-row-s{display:block;font-size:.86rem;color:#4A5E6D;line-height:1.5;margin-top:.15rem;overflow:hidden;
+  display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}
+.sgr-row:hover .sgr-row-s,.sgr-row:focus-visible .sgr-row-s{-webkit-line-clamp:4}
+.sgr-row-m{flex:none;display:flex;gap:.5rem;align-items:center;font-size:.78rem;color:#4A5E6D}
+.sgr-go{flex:none;color:#0D7A3C;font-weight:600;transition:transform .2s}
+.sgr-row:hover .sgr-go{transform:translateX(4px)}
+.sgr-badge{background:#F8E9C2;color:#6B5208;border-radius:999px;padding:.1rem .55rem;font-weight:600;font-size:.72rem;
+  white-space:nowrap}
+.sgr-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;padding:0 1.25rem 1.25rem}
+.sgr-tile{display:flex;flex-direction:column;gap:.5rem;border-radius:10px;padding:1.2rem;text-decoration:none;
+  color:#fff;background:linear-gradient(135deg,#062F4F,#0B3D63);min-height:150px;transition:transform .2s,box-shadow .2s}
+.sgr-tile:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(6,47,79,.25)}
+.sgr-tile .sgr-row-t{color:#fff;font-size:1.05rem}
+.sgr-tile .sgr-row-s{color:#D5DEE3;-webkit-line-clamp:3}
+.sgr-tile .sgr-go{color:#F2D15C;margin-top:auto}
+.sgr-hide{display:none!important}
+.sgr-fallback a{color:#0D7A3C}
+.sgr-fallback h2{font-family:'Roboto Slab',Georgia,serif;font-weight:400;color:#062F4F;font-size:1.2rem}
+@media (max-width:640px){.sgr-row-m .sgr-date{display:none}.sgr-blurb{display:none}.sgr-name{font-size:1.15rem}}
+@media (prefers-reduced-motion:reduce){.sgr-idx *{transition:none!important}.sgr-row{opacity:1;transform:none}}
+</style>
+<div class="sgr-idx"><div id="sgr-research" data-src="https://margot.stellargrove.com"><div class="sgr-fallback"><h2>Margot Weekly</h2><ul><li><a href="https://margot.stellargrove.com/newsletter/2026-11-23/">Margot Weekly — November 23, 2026</a></li></ul><h2>Stock analyses</h2><ul><li><a href="https://margot.stellargrove.com/stocks/pltr/">Palantir Technologies Inc. (PLTR)</a></li></ul></div></div></div>
+<script>
+(function () {
+  var root = document.getElementById('sgr-research');
+  if (!root || !window.fetch || !document.querySelector) return;
+  var base = root.getAttribute('data-src') || '';
+  var KEY = 'margot-open-sections';
+  function load() { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } }
+  function save(o) { try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (e) {} }
+  function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
+  var LABEL = { analysis: 'analyses', issue: 'issues', explainer: 'explainers', app: 'apps' };
+
+  fetch(base + '/index.json', { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(render)
+    .catch(function () { /* keep the fallback content */ });
+
+  function item(p, s, i) {
+    var badge = p.simulated ? '<span class="sgr-badge">Simulated</span>' : '';
+    var q = (p.title + ' ' + p.summary + ' ' + (p.group || '') + ' ' + s.label).toLowerCase();
+    var go = s.layout === 'tiles' ? 'Open →' : '→';
+    var cls = s.layout === 'tiles' ? 'sgr-tile' : 'sgr-row';
+    return '<a class="' + cls + '" href="' + base + p.url + '" data-q="' + esc(q) + '" style="--i:' + i + '">' +
+      '<span class="sgr-row-main"><span class="sgr-row-t">' + esc(p.title) + '</span>' +
+      '<span class="sgr-row-s">' + esc(p.summary) + '</span></span>' +
+      (s.layout === 'tiles' ? '' : '<span class="sgr-row-m">' + badge + '<span class="sgr-date">' + esc(p.date) +
+        '</span></span>') + '<span class="sgr-go" aria-hidden="true">' + go + '</span></a>';
+  }
+
+  function render(data) {
+    var open = load();
+    var secs = data.sections.filter(function (s) {
+      return data.pages.some(function (p) { return p.section === s.key; });
+    });
+    if (location.hash) { var h = location.hash.slice(1); if (secs.some(function (s) { return s.key === h; })) open[h] = true; }
+    var total = data.pages.length;
+    var out = '<div class="sgr-tools"><label class="sgr-search">' +
+      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">' +
+      '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>' +
+      '<input type="search" placeholder="Search ' + total + ' issues and analyses" aria-label="Search"></label>' +
+      '<button type="button" class="sgr-btn sgr-all">Expand all</button></div>';
+    out += '<div class="sgr-chips">' + secs.map(function (s) {
+      var n = data.pages.filter(function (p) { return p.section === s.key; }).length;
+      return '<button type="button" class="sgr-chip" data-k="' + s.key + '" style="--a:' + s.accent + '"><i></i>' +
+        esc(s.label) + ' <b>' + n + '</b></button>';
+    }).join('') + '</div><p class="sgr-empty sgr-hide">No matches. Try another word.</p>';
+
+    out += secs.map(function (s) {
+      var items = data.pages.filter(function (p) { return p.section === s.key; });
+      var isOpen = !!open[s.key];
+      var body = '', group = null, i = 0;
+      if (s.hub) body += '<a class="sgr-hub" href="' + base + s.hub + '">Overview of all ' + items.length + ' →</a>';
+      if (s.layout === 'tiles') {
+        body += '<div class="sgr-tiles">' + items.map(function (p) { return item(p, s, i++); }).join('') + '</div>';
+      } else {
+        body += '<div class="sgr-list">';
+        items.forEach(function (p) {
+          if (p.group && p.group !== group) { group = p.group; body += '<div class="sgr-group">' + esc(group) + '</div>'; }
+          body += item(p, s, i++);
+        });
+        body += '</div>';
+      }
+      return '<section class="sgr-sec' + (isOpen ? ' open' : '') + '" id="' + s.key + '" data-k="' + s.key +
+        '" style="--a:' + s.accent + '">' +
+        '<button type="button" class="sgr-head" aria-expanded="' + isOpen + '" aria-controls="sgr-b-' + s.key + '">' +
+        '<span class="sgr-head-t"><span class="sgr-name">' + esc(s.label) + '</span>' +
+        '<span class="sgr-blurb">' + esc(s.blurb) + '</span></span>' +
+        '<span class="sgr-count" data-n="' + items.length + '">' + items.length + ' ' + (LABEL[s.kind] || 'items') +
+        '</span><span class="sgr-chev" aria-hidden="true"></span></button>' +
+        '<div class="sgr-body" id="sgr-b-' + s.key + '"' + (isOpen ? '' : ' inert') + '><div class="sgr-inner">' +
+        body + '</div></div></section>';
+    }).join('');
+    root.innerHTML = out;
+
+    var input = root.querySelector('input');
+    var allBtn = root.querySelector('.sgr-all');
+    var sections = [].slice.call(root.querySelectorAll('.sgr-sec'));
+    function setOpen(sec, on) {
+      sec.classList.toggle('open', on);
+      sec.querySelector('.sgr-head').setAttribute('aria-expanded', on);
+      var b = sec.querySelector('.sgr-body');
+      if (on) b.removeAttribute('inert'); else b.setAttribute('inert', '');
+    }
+    function syncAll() {
+      var allOpen = sections.every(function (s) { return s.classList.contains('open'); });
+      allBtn.textContent = allOpen ? 'Collapse all' : 'Expand all';
+    }
+    syncAll();
+
+    root.addEventListener('click', function (e) {
+      var head = e.target.closest('.sgr-head');
+      var chip = e.target.closest('.sgr-chip');
+      if (head) {
+        var sec = head.parentNode, on = !sec.classList.contains('open');
+        setOpen(sec, on);
+        if (!input.value) { open[sec.getAttribute('data-k')] = on; save(open); }
+        syncAll();
+      } else if (chip) {
+        var target = root.querySelector('.sgr-sec[data-k="' + chip.getAttribute('data-k') + '"]');
+        if (input.value) { input.value = ''; filter(); }
+        setOpen(target, true); open[target.getAttribute('data-k')] = true; save(open); syncAll();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else if (e.target === allBtn) {
+        var to = allBtn.textContent === 'Expand all';
+        sections.forEach(function (s) { setOpen(s, to); open[s.getAttribute('data-k')] = to; });
+        save(open); syncAll();
+      }
+    });
+
+    function filter() {
+      var words = input.value.toLowerCase().split(/\s+/).filter(Boolean);
+      var any = false;
+      sections.forEach(function (sec) {
+        var n = 0, rows = [].slice.call(sec.querySelectorAll('[data-q]'));
+        rows.forEach(function (r) {
+          var hit = words.every(function (w) { return r.getAttribute('data-q').indexOf(w) !== -1; });
+          r.classList.toggle('sgr-hide', !hit); if (hit) n++;
+        });
+        [].slice.call(sec.querySelectorAll('.sgr-group')).forEach(function (g) {
+          var el = g.nextElementSibling, vis = false;
+          while (el && !el.classList.contains('sgr-group')) { if (!el.classList.contains('sgr-hide')) vis = true; el = el.nextElementSibling; }
+          g.classList.toggle('sgr-hide', !vis);
+        });
+        var count = sec.querySelector('.sgr-count'), total = count.getAttribute('data-n');
+        var label = count.textContent.replace(/^[\d\s]+(of\s+\d+\s+)?/, '');
+        count.textContent = (words.length ? n + ' of ' + total : total) + ' ' + label;
+        sec.classList.toggle('sgr-hide', words.length > 0 && n === 0);
+        if (words.length) setOpen(sec, n > 0); else setOpen(sec, !!open[sec.getAttribute('data-k')]);
+        if (n) any = true;
+      });
+      root.querySelector('.sgr-empty').classList.toggle('sgr-hide', any || !words.length);
+      syncAll();
+    }
+    input.addEventListener('input', filter);
+  }
+})();
+</script></section></div>
+</div>
