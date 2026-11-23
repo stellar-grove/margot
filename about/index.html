@@ -51,7 +51,25 @@ body{margin:0;background:#fff;color:#0D1C24;font-family:'Montserrat',system-ui,-
 .mg-hero>*{position:relative}
 .mg-kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#9FB6C6;margin:0 0 .6rem}
 .mg-hero h1{font-family:'Roboto Slab',Georgia,serif;font-weight:300;font-size:2.4rem;line-height:1.2;margin:0 0 .6rem}
-.mg-hero p.mg-lede{color:#D5DEE3;max-width:640px;margin:0;font-size:1.02rem}
+.mg-hero p.mg-lede{color:#D5DEE3;max-width:500px;margin:0;font-size:1.02rem}
+.mg-hero{min-height:250px}
+.mg-hero>.mg-spark{position:absolute;right:0;bottom:0;width:54%;height:100%;pointer-events:none;
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 45%);mask-image:linear-gradient(to right,transparent,#000 45%)}
+.mg-spark .mg-grid-l{stroke:rgba(159,182,198,.14);stroke-width:1}
+.mg-spark .mg-ln{fill:none;stroke:#F2D15C;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:1;stroke-dashoffset:1;animation:mg-draw 3.2s cubic-bezier(.35,.55,.2,1) .35s forwards;
+  filter:drop-shadow(0 0 6px rgba(242,209,92,.45))}
+.mg-spark .mg-area{opacity:0;transform:translateY(14px);animation:mg-rise 1.6s ease-out 1.6s forwards}
+.mg-spark .mg-dot,.mg-spark .mg-ring{opacity:0;animation:mg-pop .4s ease-out 3.45s forwards}
+.mg-spark .mg-ring{transform-box:fill-box;transform-origin:center;
+  animation:mg-pop .4s ease-out 3.45s forwards,mg-pulse 2.2s ease-out 3.9s infinite}
+@keyframes mg-draw{to{stroke-dashoffset:0}}
+@keyframes mg-rise{to{opacity:1;transform:none}}
+@keyframes mg-pop{to{opacity:1}}
+@keyframes mg-pulse{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.2);opacity:0}}
+@media (max-width:640px){.mg-hero>.mg-spark{width:100%;opacity:.25}}
+@media (prefers-reduced-motion:reduce){.mg-spark .mg-ln{animation:none;stroke-dashoffset:0}
+  .mg-spark .mg-area,.mg-spark .mg-dot{animation:none;opacity:1;transform:none}.mg-spark .mg-ring{display:none}}
 .mg-sec{margin:0 0 2.4rem}
 .mg-sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
 .mg-sec-h a{color:#0D7A3C;font-weight:600;font-size:.9rem;text-decoration:none}
