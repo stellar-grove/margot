@@ -32,6 +32,16 @@
   },
   {
    "section": "stocks",
+   "title": "NVIDIA Corporation (NVDA)",
+   "summary": "At $165.05, NVDA trades at 1.8x the $92.59 per share our base-case DCF supports.",
+   "date": "2026-11-23",
+   "url": "/stocks/nvda/",
+   "simulated": false,
+   "group": "",
+   "kind": "analysis"
+  },
+  {
+   "section": "stocks",
    "title": "Palantir Technologies Inc. (PLTR)",
    "summary": "At $159.36, PLTR trades at 3.9x the $41.10 per share our base-case DCF supports.",
    "date": "2026-11-23",
