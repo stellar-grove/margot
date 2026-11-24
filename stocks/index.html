@@ -95,6 +95,27 @@ a.mg-card:hover .mg-go{transform:translateX(4px)}
 .mg-card.mg-soon{background:#F6F8F8;border-style:dashed}
 .mg-card.mg-soon::before{background:#9FB6C6}
 .mg-card.mg-soon .mg-meta{color:#7F8F9B}
+.mg-board{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #D5DEE3;border-radius:10px;background:#fff}
+.mg-board table{width:100%;border-collapse:collapse;font-size:.9rem}
+.mg-board th{background:#062F4F;color:#fff;font-weight:600;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
+  text-align:left;padding:.65rem .8rem;white-space:nowrap}
+.mg-board td{padding:.7rem .8rem;border-top:1px solid #E3E9EC;vertical-align:middle}
+.mg-board tbody tr:hover td{background:#F6F8F8}
+.mg-board .n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.mg-board td a{text-decoration:none;color:inherit;display:block}
+.mg-board td a b{color:#062F4F;font-weight:600}
+.mg-board td a span{display:block;font-size:.78rem;color:#4A5E6D;max-width:240px;white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis}
+.mg-board td a:hover b{text-decoration:underline}
+.mg-gap{display:flex;align-items:center;gap:.6rem;font-size:.8rem;color:#4A5E6D;white-space:nowrap}
+.mg-track{position:relative;flex:none;width:96px;height:6px;border-radius:3px;
+  background:linear-gradient(90deg,#E1F3E8,#EEF2F1 50%,#F8E9C2)}
+.mg-track::after{content:"";position:absolute;left:50%;top:-4px;bottom:-4px;width:1px;background:#9FB6C6}
+.mg-track i{position:absolute;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#062F4F;
+  border:2px solid #fff;box-shadow:0 0 0 1px #062F4F}
+.mg-na,.mg-dim{color:#7F8F9B;font-size:.8rem}
+.mg-foot{font-size:.78rem;color:#4A5E6D;margin:.6rem 0 0;max-width:760px}
+@media (max-width:640px){.mg-board .mg-hide-s,.mg-track{display:none}.mg-board th,.mg-board td{padding:.6rem .5rem}.mg-board td a span{max-width:120px}.mg-board{font-size:.85rem}.mg-sec-h{flex-direction:column;gap:.2rem}}
 .mg-list{list-style:none;padding:0;margin:0;border-top:1px solid #D5DEE3}
 .mg-list li{border-bottom:1px solid #D5DEE3}
 .mg-list a{display:flex;gap:1rem;align-items:baseline;padding:.85rem .25rem;text-decoration:none;color:inherit}
