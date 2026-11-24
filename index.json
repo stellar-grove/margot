@@ -32,10 +32,30 @@
   },
   {
    "section": "stocks",
+   "title": "Allot Ltd. (ALLT)",
+   "summary": "At $7.64, ALLT trades 33% below the $11.39 per share our base-case DCF supports.",
+   "date": "2026-11-23",
+   "url": "/stocks/allt/",
+   "simulated": false,
+   "group": "",
+   "kind": "analysis"
+  },
+  {
+   "section": "stocks",
    "title": "Amazon.com, Inc. (AMZN)",
    "summary": "At $255.39, AMZN trades close to the $228.99 per share our base-case DCF supports.",
    "date": "2026-11-23",
    "url": "/stocks/amzn/",
+   "simulated": false,
+   "group": "",
+   "kind": "analysis"
+  },
+  {
+   "section": "stocks",
+   "title": "CleanSpark, Inc. (CLSK)",
+   "summary": "At $5.53, CLSK trades 157% below the -$9.66 per share our base-case DCF supports.",
+   "date": "2026-11-23",
+   "url": "/stocks/clsk/",
    "simulated": false,
    "group": "",
    "kind": "analysis"
@@ -62,6 +82,16 @@
   },
   {
    "section": "stocks",
+   "title": "ServiceNow, Inc. (NOW)",
+   "summary": "At $91.72, NOW trades 34% below the $138.58 per share our base-case DCF supports.",
+   "date": "2026-11-23",
+   "url": "/stocks/now/",
+   "simulated": false,
+   "group": "",
+   "kind": "analysis"
+  },
+  {
+   "section": "stocks",
    "title": "NVIDIA Corporation (NVDA)",
    "summary": "At $165.05, NVDA trades at 1.8x the $92.59 per share our base-case DCF supports.",
    "date": "2026-11-23",
@@ -72,10 +102,30 @@
   },
   {
    "section": "stocks",
+   "title": "Navitas Semiconductor Corporation (NVTS)",
+   "summary": "At $7.33, NVTS trades at 2.7x the $2.76 per share our base-case DCF supports.",
+   "date": "2026-11-23",
+   "url": "/stocks/nvts/",
+   "simulated": false,
+   "group": "",
+   "kind": "analysis"
+  },
+  {
+   "section": "stocks",
    "title": "Palantir Technologies Inc. (PLTR)",
    "summary": "At $159.36, PLTR trades at 3.9x the $41.10 per share our base-case DCF supports.",
    "date": "2026-11-23",
    "url": "/stocks/pltr/",
+   "simulated": false,
+   "group": "",
+   "kind": "analysis"
+  },
+  {
+   "section": "stocks",
+   "title": "Tesla, Inc. (TSLA)",
+   "summary": "At $385.46, TSLA is priced far above its base-case DCF value, which supports only $15.57 per share.",
+   "date": "2026-11-23",
+   "url": "/stocks/tsla/",
    "simulated": false,
    "group": "",
    "kind": "analysis"
