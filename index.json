@@ -32,6 +32,36 @@
   },
   {
    "section": "stocks",
+   "title": "Amazon.com, Inc. (AMZN)",
+   "summary": "At $255.39, AMZN trades close to the $228.99 per share our base-case DCF supports.",
+   "date": "2026-11-23",
+   "url": "/stocks/amzn/",
+   "simulated": false,
+   "group": "",
+   "kind": "analysis"
+  },
+  {
+   "section": "stocks",
+   "title": "Chevron Corporation (CVX)",
+   "summary": "At $206.17, CVX trades 78% below the $925.38 per share our base-case DCF supports.",
+   "date": "2026-11-23",
+   "url": "/stocks/cvx/",
+   "simulated": false,
+   "group": "",
+   "kind": "analysis"
+  },
+  {
+   "section": "stocks",
+   "title": "Microsoft Corporation (MSFT)",
+   "summary": "At $492.50, MSFT trades at 2.7x the $183.81 per share our base-case DCF supports.",
+   "date": "2026-11-23",
+   "url": "/stocks/msft/",
+   "simulated": false,
+   "group": "",
+   "kind": "analysis"
+  },
+  {
+   "section": "stocks",
    "title": "NVIDIA Corporation (NVDA)",
    "summary": "At $165.05, NVDA trades at 1.8x the $92.59 per share our base-case DCF supports.",
    "date": "2026-11-23",
