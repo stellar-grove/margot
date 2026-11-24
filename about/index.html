@@ -37,7 +37,7 @@ body{margin:0;background:#fff;color:#0D1C24;font-family:'Montserrat',system-ui,-
 <body>
 <header class="sgr-top"><div class="in">
 <a class="sgr-brand" href="/">Margot <span>·</span> Isvestments</a>
-<nav class="sgr-nav"><a href="/">Home</a><a href="/newsletter/">Newsletter</a><a href="/stocks/">Stocks</a><a href="/about/">Methodology</a><a href="/newsletter/feed.xml">RSS</a></nav>
+<nav class="sgr-nav"><a href="/">Home</a><a href="/newsletter/">Newsletter</a><a href="/stocks/">Stocks</a><a href="/track-record/">Track record</a><a href="/about/">Methodology</a><a href="/newsletter/feed.xml">RSS</a></nav>
 </div></header>
 <main class="sgr-main">
 <style>
@@ -98,8 +98,8 @@ a.mg-card:hover .mg-go{transform:translateX(4px)}
 .mg-board{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #D5DEE3;border-radius:10px;background:#fff}
 .mg-board table{width:100%;border-collapse:collapse;font-size:.9rem}
 .mg-board th{background:#062F4F;color:#fff;font-weight:600;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
-  text-align:left;padding:.65rem .8rem;white-space:nowrap}
-.mg-board td{padding:.7rem .8rem;border-top:1px solid #E3E9EC;vertical-align:middle}
+  text-align:left;padding:.65rem .6rem;white-space:nowrap}
+.mg-board td{padding:.7rem .6rem;border-top:1px solid #E3E9EC;vertical-align:middle}
 .mg-board tbody tr:hover td{background:#F6F8F8}
 .mg-board .n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .mg-board td a{text-decoration:none;color:inherit;display:block}
@@ -108,12 +108,15 @@ a.mg-card:hover .mg-go{transform:translateX(4px)}
   text-overflow:ellipsis}
 .mg-board td a:hover b{text-decoration:underline}
 .mg-gap{display:flex;align-items:center;gap:.6rem;font-size:.8rem;color:#4A5E6D;white-space:nowrap}
-.mg-track{position:relative;flex:none;width:96px;height:6px;border-radius:3px;
+.mg-track{position:relative;flex:none;width:64px;height:6px;border-radius:3px;
   background:linear-gradient(90deg,#E1F3E8,#EEF2F1 50%,#F8E9C2)}
 .mg-track::after{content:"";position:absolute;left:50%;top:-4px;bottom:-4px;width:1px;background:#9FB6C6}
 .mg-track i{position:absolute;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#062F4F;
   border:2px solid #fff;box-shadow:0 0 0 1px #062F4F}
 .mg-na,.mg-dim{color:#7F8F9B;font-size:.8rem}
+.mg-ret{display:block;font-weight:600;color:#062F4F}
+.mg-sub{display:block;font-size:.74rem;color:#4A5E6D}
+.mg-foot a{color:#0D7A3C}
 .mg-foot{font-size:.78rem;color:#4A5E6D;margin:.6rem 0 0;max-width:760px}
 @media (max-width:640px){.mg-board .mg-hide-s,.mg-track{display:none}.mg-board th,.mg-board td{padding:.6rem .5rem}.mg-board td a span{max-width:120px}.mg-board{font-size:.85rem}.mg-sec-h{flex-direction:column;gap:.2rem}}
 .mg-list{list-style:none;padding:0;margin:0;border-top:1px solid #D5DEE3}
@@ -126,6 +129,10 @@ a.mg-card:hover .mg-go{transform:translateX(4px)}
 .mg-list .mg-s span{display:block;font-size:.88rem;color:#4A5E6D}
 .mg-list .mg-d{flex:none;font-size:.78rem;color:#4A5E6D}
 .mg-prose>*{max-width:760px}
+.mg-lead{max-width:760px;margin:1.2rem 0 1.4rem}
+.mg-notes{max-width:760px;color:#4A5E6D;font-size:.9rem}
+.mg-notes li{margin:.3rem 0}
+.mg-prose-wide h2{margin-top:2.2rem}
 .mg-prose h2{margin-top:2rem}
 .mg-prose li{margin:.35rem 0}
 .mg-prose a{color:#0D7A3C}
@@ -152,13 +159,27 @@ each number. Nothing is drafted ahead of the data.</li>
 <ul>
 <li><strong>Peers</strong> are chosen from the company's industry (or sector) and narrowed to the five closest in
 market value. Peer medians are computed from that set, not from published benchmarks.</li>
-<li><strong>Discounted cash flow.</strong> When trailing free cash flow is positive, the model projects five years of
-free cash flow and adds a terminal value, discounted at a cost of capital built from the stock's beta. When it is
+<li><strong>Discounted cash flow.</strong> When trailing free cash flow is positive, the model projects ten years of
+free cash flow and adds a terminal value, discounted at a cost of capital built from the stock's beta and kept
+between 8% and 12%. Cash-flow growth starts from the analysts' consensus revenue growth for the next fiscal year
+(or last year's actual growth when there's no consensus) and slows to 2.5% by year ten.</li>
+<li><strong>Capex-adjusted value.</strong> Companies spending more than 1.5 times their depreciation on capital
+projects (data centres, factories) also get a second value that treats spending above depreciation as investment
+in growth: operating cash flow minus depreciation, all other inputs unchanged. The base and capex-adjusted values
+bracket the likely answer.</li>
+<li><strong>What the price implies.</strong> For stocks priced above the model, a reverse DCF shows the starting
+cash-flow growth (fading over ten years) that would justify today's price, next to the consensus revenue growth.
+It's the most useful number when a price rests on things a cash-flow model can't see.</li>
+<li><strong>Negative cash flow.</strong> When it is
 not positive, a revenue-driven model starts from consensus revenue and ramps the free-cash-flow margin toward a
 target in bear, base and bull scenarios. Either way the result depends heavily on the assumptions shown on each
 page; read it as a range, not a price target.</li>
 <li>Multiples that are negative or not meaningful (for example a P/E on losses) are shown as a dash.</li>
 </ul>
+<h2>Track record</h2>
+<p>Every published analysis is tracked from the closing price on the day of its first analysis, against the S&amp;P 500
+over the same days, on the <a href="/track-record/">track record</a> page. None is removed, including the ones that
+went badly.</p>
 <h2>Mock portfolios</h2>
 <p>When they launch, mock portfolios will be hypothetical: no real money, no real trades. Their returns will not
 include taxes, and any trading costs assumed will be stated.</p>
@@ -173,6 +194,6 @@ not a recommendation to buy or sell any security.</li>
 </div>
 </main>
 <footer class="sgr-foot"><div class="in">For information only, not investment advice. Margot Isvestments may hold positions in securities it writes about.<br>© 2026 Margot Isvestments,
-a <a href="https://www.stellargrove.com">Stellar Grove</a> company</div></footer>
+a <a href="https://www.stellargrove.com/stellar-grove-welcome">Stellar Grove</a> company</div></footer>
 </body>
 </html>
